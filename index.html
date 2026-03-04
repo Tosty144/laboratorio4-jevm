@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>encriptacion</title>
+    <script src="codigo.js"></script>
+
+</head>
+<body>
+    <h1>aplicacion web de rsa</h1>
+    <p>esto va a ser un programa para encriptar y desencriptar</p>
+
+    <label>ingrese el valor de p</label>
+    <input type="text" id="p" name="p"><br><br>
+    <label>ingrese el valor de q</label>
+    <input type="text" id="q" name="q"><br><br>
+    <label>ingrese el valor de e</label>
+    <input type="text" id="e" name="e"><br><br>
+    <label>ingrese el valor de n</label>
+    <input type="text" id="n" name="n"><br><br>
+
+    <label>ingrese el texto a encriptar</label>
+    <input type="text" id="textoen" name="textoen"><br><br>
+    <label>ingrese el texto a desencriptar</label>
+    <input type="text" id="textode" name="textode"><br><br>
+
+
+
+    <input type="button" value="encriptar" onclick="encriptar()">
+    <input type="button" value="desencriptar" onclick="desencriptar()">
+
+
+    <p id="rta"></p>
+    sin respuesta
+    
+
+
+</body>
+</html>
