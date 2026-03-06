@@ -7,7 +7,8 @@ function encriptar() {
     document.getElementById("rta").innerHTML =
         "Valor de e: " + e + "<br>" +
         "Valor de n: " + n + "<br>" +
-        "Texto: " + texto;
+        "Texto encriptado: " + texto;
+
 }
 
 function desencriptar() {
