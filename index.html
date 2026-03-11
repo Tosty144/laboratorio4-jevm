@@ -1,44 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>encriptacion</title>
+    <title>Encriptación RSA</title>
     <script src="codigo.js"></script>
 
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1{
+            color: #333;
+        }
+
+        .imagenes{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .imagenes img{
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .formulario{
+            background: white;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        input{
+            padding: 6px;
+            margin: 5px;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>aplicacion web de rsa</h1>
-    <p>esto va a ser un programa para encriptar y desencriptar</p>
-<<<<<<< HEAD
-    <img src ="C:\Users\jhose\Downloads\github lab4\rsa imagen.jpg" alt="imagen de rsa">
-=======
-    <p>hola juan pablo</p>
-    <img src="C:\Users\jhose\Downloads\github lab4\imagen pablo.jpg" alt="pablo">
->>>>>>> desarrollador-jhosep-uno
 
-    <label>ingrese el valor de p</label>
-    <input type="text" id="p" name="p"><br><br>
-    <label>ingrese el valor de q</label>
-    <input type="text" id="q" name="q"><br><br>
-    <label>ingrese el valor de e</label>
-    <input type="text" id="e" name="e"><br><br>
-    <label>ingrese el valor de n</label>
-    <input type="text" id="n" name="n"><br><br>
+<h1>Aplicación Web de RSA</h1>
+<p>Programa para encriptar y desencriptar mensajes</p>
 
-    <label>ingrese el texto a encriptar</label>
-    <input type="text" id="textoen" name="textoen"><br><br>
-    <label>ingrese el texto a desencriptar</label>
-    <input type="text" id="textode" name="textode"><br><br>
+<div class="imagenes">
+    <img src="rsa_imagen.jpg" alt="Imagen de RSA">
+    <img src="imagen_pablo.jpg" alt="Pablo">
+</div>
 
+<div class="formulario">
 
+<label>Ingrese el valor de p</label><br>
+<input type="text" id="p"><br>
 
-    <input type="button" value="encriptar" onclick="encriptar()">
-    <input type="button" value="desencriptar" onclick="desencriptar()">
+<label>Ingrese el valor de q</label><br>
+<input type="text" id="q"><br>
 
+<label>Ingrese el valor de e</label><br>
+<input type="text" id="e"><br>
 
-    <p id="rta"></p>
-    sin respuesta
-    
+<label>Ingrese el valor de n</label><br>
+<input type="text" id="n"><br>
 
+<label>Ingrese el texto a encriptar</label><br>
+<input type="text" id="textoen"><br>
+
+<label>Ingrese el texto a desencriptar</label><br>
+<input type="text" id="textode"><br><br>
+
+<input type="button" value="Encriptar" onclick="encriptar()">
+<input type="button" value="Desencriptar" onclick="desencriptar()">
+
+<p id="rta">Sin respuesta</p>
+
+</div>
 
 </body>
 </html>
